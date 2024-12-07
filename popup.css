@@ -1,0 +1,133 @@
+html {
+    width: 380px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: inherit;
+}
+
+.loading {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    display: inline;
+    padding: 3px;
+}
+
+/* applied to elements with both loading and spinning classes */
+.loading.spinning { 
+    border: 3px solid #f3f3f3; /* Light grey */
+    border-radius: 50%;
+    color: transparent;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform:rotate(0deg); }
+    100% { transform:rotate(360deg); }
+}
+
+#top-row {
+    /* background-color: #e1edf2; */
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    /* border-radius: 5px; */
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3px;
+    text-align: center;
+}
+
+.lang {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font: inherit;
+    color: inherit;
+}
+
+#arrow {
+    padding-top: 6px;
+    justify-content: center;
+}
+
+#selection {
+    position: absolute;
+    background-image: linear-gradient(to right, #a855f7, #ec4899);
+    z-index: -10;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 2px;
+    color: transparent;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: translate(-50%, -50%);
+    transition: all 0.18s ease-out
+}
+
+.icon {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font: inherit;
+    color: inherit;
+    padding: 3px;
+    max-width: 23px;
+    max-height: 23px;
+}
+
+.icon img {
+    object-fit: contain;
+    max-width: 23px;
+    max-height: 23px;
+}
+
+#body {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 3px;
+    margin-top: 12px;
+    background-color: #f3f3f3;
+    border: 1.5px solid darkgray;
+    border-radius: 3px;
+}
+
+.text-container {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    overflow: auto;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    line-height: 20px;
+}
+
+#left {
+    border-right: 1.5px solid darkgray
+}
